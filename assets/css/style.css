@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #000;
+}
+
+header {
+    background-color: #000;
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 20px;
+
+    position: fixed;
+    z-index: 55;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #fff;
+
+    font-size: 15px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: rgb(24, 24, 24);
+    border-bottom: 1px solid #fff;
+    padding: 15px 20px;
+    color: #fff;
+}
+
+.botao-menu {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+
+    font-size: 30px;
+    float: right;
+    line-height: 0;
+
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.botao-menu.fechar {
+    display: none;
+}
+
+@media(max-width:1024px) {
+    .botao-menu {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        left: 90%;
+    }
+
+    ul {
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background-color: #000;
+        top: 50px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked~ul {
+        left: 50%;
+        display: block;
+        transition: .5s;
+    }
+}
+
+/* Inicio =============================================================== */
+#inicio {
+    background: url('../img/back01.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    height: 95vh;
+    color: #fff;
+
+    padding-top: 220px;
+    padding-left: 50px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.chamada {
+    width: 570px;
+    padding-right: 50px;
+}
+
+.faleComAGente {
+    color: #fff;
+
+    padding: 10px;
+
+    border: 1px solid rgb(82, 82, 82);
+    border-radius: 10px;
+
+    background-color: rgb(27, 27, 27);
+}
+
+/* Inicio =============================================================== */
+
+
+/* Servico ============================================================== */
+#servico {
+    width: 100%;
+    height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-flow: wrap;
+}
+
+.card {
+    width: 250px;
+    padding: 10px;
+
+    border: 1px solid rgba(128, 128, 128, 0.637);
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+
+    margin-left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:first-child {
+    margin: 0;
+}
+
+.imgCard {
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50px;
+
+    border-radius: 50%;
+
+    background-color: #000;
+    color: #fff;
+}
+
+.descricaoCard {
+    height: 60px;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+    font-size: 15px;
+
+    font-weight: 600;
+    color: #000;
+}
+
+.saibaMais {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Servico ============================================================== */
+
+
+/* Sobre ================================================================ */
+#sobre {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(236, 236, 236);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descricaoSobre {
+    width: 50%;
+    padding: 30px;
+}
+
+.descricaoSobre>p {
+    text-align: justify;
+}
+
+.boxImgSobre {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgSobre {
+    width: 600px;
+}
+
+/* Sobre ================================================================ */
+
+
+/* Clientes ============================================================= */
+#clientes {
+    width: 100%;
+    height: 60vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#clientes>label {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.imgClientesContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 30px;
+}
+
+.cardImgCliente {
+    width: 120px;
+    height: 120px;
+    border: 1px solid rgba(0, 0, 0, 0.315);
+
+    margin-left: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardImgCliente:first-child {
+    margin: 0;
+}
+
+.imgClientes {
+    width: 100px;
+    filter: grayscale();
+}
+
+/* Clientes ============================================================= */
+
+
+/* Contato ============================================================== */
+#contato {
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(236, 236, 236);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social {
+    display: flex;
+    margin-top: 10px;
+}
+
+.bolaSocial {
+    background-color: black;
+    /* padding: 5px; */
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 10px;
+}
+
+.bolaSocial a {
+    color: #fff;
+}
+
+.bolaSocial:first-child {
+    margin: 0;
+}
+
+/* Contato ============================================================== */
+
+
+
+/* Footer ================================================================ */
+footer {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    padding-bottom: 5px;
+}
+
+/* Footer ================================================================ */
+
+
+/* Modal ================================================================ */
+.containerModal {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: rgba(0, 0, 0, 0.514);
+
+    position: fixed;
+    z-index: 99;
+
+    display: none;
+}
+
+.boxModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.boxConteudoModal {
+    background-color: #fff;
+    width: 600px;
+    /* height: 200px; */
+
+    padding: 40px 10px 10px 10px;
+    position: relative;
+
+    border-radius: 10px;
+}
+
+.botaoFecharModal {
+    background-color: rgb(129, 0, 0);
+    color: #fff;
+
+    padding: 5px;
+    position: absolute;
+    cursor: pointer;
+
+    top: 0;
+    right: 0;
+
+    border-radius: 0 10px 0 0;
+}
+
+/* Modal ================================================================ */
+
+
+/* Whatsapp ============================================================= */
+.whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    z-index: 55;
+    cursor: pointer;
+
+    background-color: rgb(0, 70, 0);
+    color: #fff;
+
+    font-size: 15px;
+
+    bottom: 10px;
+    right: 10px;
+
+    padding: 5px;
+
+    border-radius: 10px;
+    width: 180px;
+}
+
+/* Whatsapp ============================================================= */
+
+
+/* Responsivo =========================================================== */
+@media(max-width: 500px) {
+    #inicio {
+        padding-top: 220px;
+        padding-left: 0px;
+    }
+
+    .chamada {
+        width: 410px;
+        padding-left: 30px;
+    }
+
+    #servico {
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .card {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    #sobre {
+        height: auto;
+        z-index: -2;
+    }
+
+    .descricaoSobre {
+        z-index: 1;
+        width: 400px;
+    }
+
+    .boxImgSobre {
+        display: none;
+    }
+
+    .whatsapp {
+        display: none;
+    }
+
+    .boxConteudoModal {
+        width: 400px;
+    }
+}
+
+@media(max-width: 375px){
+    .chamada {
+        width: 350px;
+        padding-left: 30px;
+    }
+}
+/* Responsivo =========================================================== */
