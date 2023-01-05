@@ -37,6 +37,7 @@
             <ul id="menuUl">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servico">Serviços</a></li>
+                <li><a href="#nossoSistema">Nosso Sistema</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#clientes">Clientes</a></li>
                 <li><a href="#contato">Contato</a></li>
@@ -116,6 +117,29 @@
         </article>
         <!-- Rede -->
 
+    </section>
+
+    <section id="nossoSistema">
+        <article class="textNossoSistema">
+            <p>
+                Um sistema completo para quem precisa, fazer suas vendas, controlar seu estoque, emitir suas ordens de
+                serviço e registrar seus atendimentos (chamados), o IT Gestor e um software completo, e veio para
+                atender as principais áreas do mercado.
+            </p>
+            <br>
+            <p>
+                Hoje o sistema e configurado para atender lojas do varejo, assistências técnicas, lojas de materiais de
+                construção, oficinas mecânicas, entre outros tipos de estabelecimentos, em breve o sistema atenderá
+                também mercados e restaurantes.
+            </p>
+            <br>
+            <p>
+                Entre em contato conosco e peça já uma demonstração do nosso sistema.
+            </p>
+        </article>
+        <article class="imgPrintItGestor">
+            <img src="./assets/img/itTela.png" alt="it gestor print tela" width="100%">
+        </article>
     </section>
 
     <section id="sobre">
@@ -206,11 +230,16 @@
 
     </section>
 
-    <footer>
+    <footer id="fimdapagina">
         <label>2020-
-            <?= date('Y') ?> - InfoTech Informática - 34.676.582/0001-42
+            - InfoTech Informática - 34.676.582/0001-42
         </label>
     </footer>
+
+    <script>
+        let data = new Date()
+        document.getElementById('fimdapagina').innerHTML = '2020-' + data.getFullYear() + ' - InfoTech Informática - 34.676.582/0001-42'
+    </script>
 
     <!-- Whatsapp -->
     <a class="whatsapp" href='https://wa.me/5544988228073' target="__blank">
