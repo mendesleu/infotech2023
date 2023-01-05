@@ -482,6 +482,16 @@ footer {
 
 
 /* Responsivo =========================================================== */
+@media (max-width: 600px){
+    #nossoSistema{
+        height: 70vh;
+        padding-bottom: 20px;
+    }
+
+    .imgPrintItGestor{
+        width: 300px;
+    }
+}
 @media(max-width: 500px) {
     #inicio {
         padding-top: 220px;
@@ -497,6 +507,15 @@ footer {
         height: auto;
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+
+    #nossoSistema{
+        height: 100vh;
+        padding-bottom: 20px;
+    }
+
+    .imgPrintItGestor{
+        width: 300px;
     }
 
     .card {
@@ -531,6 +550,15 @@ footer {
     .chamada {
         width: 350px;
         padding-left: 30px;
+    }
+    
+    #nossoSistema{
+        height: 120vh;
+        padding-bottom: 20px;
+    }
+
+    .imgPrintItGestor{
+        width: 300px;
     }
 }
 /* Responsivo =========================================================== */
