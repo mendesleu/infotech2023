@@ -136,6 +136,17 @@ nav ul li a:hover {
 .chamada {
     width: 570px;
     padding-right: 50px;
+    animation: normal chamada 4s;
+}
+
+@keyframes chamada{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 100%;
+    }
 }
 
 .faleComAGente {
